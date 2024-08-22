@@ -1,4 +1,4 @@
-package lista03;
+package ex01;
 
 /**
  *
@@ -6,7 +6,7 @@ package lista03;
  */
 public class App {
     public static void main(String[] args) {
-        Funcionario f = new Funcionario("Lcuas", 5000);
+        Funcionario f = new Funcionario("Lcuas", 3000);
         
         System.out.println(f.calcularIrpf());
     }
