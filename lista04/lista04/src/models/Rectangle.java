@@ -20,12 +20,12 @@ public class Rectangle {
     
     /**
      *
-     * @param altura
-     * @param comprimento
+     * @param height
+     * @param length
      */
-    public Rectangle(int altura, int comprimento) {
-        this.height = altura;
-        this.length = comprimento;
+    public Rectangle(int height, int length) {
+        this.height = height;
+        this.length = length;
     }
     
     /**
