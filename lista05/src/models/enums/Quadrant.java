@@ -8,5 +8,6 @@ public enum Quadrant {
     NONE,
     FIRST,
     SECOND,
-    // ...
+    THIRD,
+    FOURTH
 }

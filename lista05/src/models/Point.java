@@ -21,7 +21,26 @@ public class Point {
     }
 
     public Quadrant identifyQuadrant() {
-        return Quadrant.NONE;
+        Quadrant q = Quadrant.NONE;
+                
+        if (x < 0 && y > 0) {
+            q = Quadrant.FIRST;
+        }
+        
+        if (x > 0 && y > 0) {
+            q = Quadrant.SECOND;
+        }
+        
+        
+        if (x < 0 && y < 0) {
+            q = Quadrant.THIRD;
+        }
+        
+        if (x > 0 && y < 0) {
+            q = Quadrant.FOURTH;
+        }
+            
+        return q;
     }
     
     public boolean isAffectingX() {
