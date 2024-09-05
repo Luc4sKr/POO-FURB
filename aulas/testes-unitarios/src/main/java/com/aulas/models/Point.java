@@ -1,6 +1,4 @@
-package models;
-
-import models.enums.Quadrant;
+package com.aulas.models;
 
 /**
  *
