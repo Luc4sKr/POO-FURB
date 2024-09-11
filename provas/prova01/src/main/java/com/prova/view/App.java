@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.prova.view;
 
 import com.prova.models.DiaSemana;
@@ -15,7 +11,7 @@ import javax.swing.JOptionPane;
 public class App extends javax.swing.JFrame {
 
     /**
-     * Creates new form App
+     * Inicializa os componentes
      */
     public App() {
         initComponents();
@@ -94,6 +90,11 @@ public class App extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Quando clicado, obtem os inputs do dia da semana e se o ingresso é para estudante
+     * e com base nos inputs calcula e mostra na tela o valor do ingresso.
+     * No caso de exceção, abre um JOptionPane com a descrição do erro.
+     */
     private void jBtnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCalcularActionPerformed
         try {
             DiaSemana diaDaSemana = DiaSemana.valueOf(jCbDiaDaSemana.getItemAt(jCbDiaDaSemana.getSelectedIndex()));
