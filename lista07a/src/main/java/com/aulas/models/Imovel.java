@@ -12,6 +12,13 @@ public class Imovel {
     private String endereco;
     private int area;
 
+    public Imovel(Bairro bairro, Finalidade finalidade, String endereco, int area) {
+        this.setBairro(bairro);
+        this.setFinalidade(finalidade);
+        this.setEndereco(endereco);
+        this.setArea(area);
+    }
+    
     public double calcularIptu() {
         double valorIptu = 0;
         
@@ -44,7 +51,7 @@ public class Imovel {
         return bairro;
     }
 
-    public void setBairro(Bairro bairro) {
+    public final void setBairro(Bairro bairro) {
         this.bairro = bairro;
     }
 
@@ -52,7 +59,7 @@ public class Imovel {
         return finalidade;
     }
 
-    public void setFinalidade(Finalidade finalidade) {
+    public final void setFinalidade(Finalidade finalidade) {
         this.finalidade = finalidade;
     }
     
@@ -60,7 +67,7 @@ public class Imovel {
         return endereco;
     }
 
-    public void setEndereco(String endereco) {
+    public final void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
@@ -68,7 +75,10 @@ public class Imovel {
         return area;
     }
 
-    public void setArea(int area) {
+    public final void setArea(int area) {
+        if (area < 0) {
+            throw new IllegalArgumentException();
+        }
         this.area = area;
     }
 }

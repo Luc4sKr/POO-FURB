@@ -7,6 +7,11 @@ package com.aulas.models;
 public class Bairro {
     private String nome;
     private double coeficienteIptu;
+
+    public Bairro(String nome, double coeficienteIptu) {
+        this.nome = nome;
+        this.coeficienteIptu = coeficienteIptu;
+    }
     
     public String getNome() {
         return nome;
